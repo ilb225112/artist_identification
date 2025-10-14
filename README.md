@@ -11,11 +11,7 @@ artist_identification/
 │   ├── CNN_Experiments.ipynb          # Baseline and variant CNN experiments
 │   ├── Cnn_variations.ipynb           # Additional CNN architecture experiments
 │   └── SVM.ipynb                      # Feature extraction + SVM pipelines (including ensemble/fusion)
-├── models/
-│   ├── final/                         # Final trained model weights and pickles
-│   ├── Temp/                          # Intermediate checkpoints
-│   └── json_metrics_for_diff_epochs_of_cnnexp/  # Training logs and metrics
-└── ml-assignment (6).ipynb            # Consolidated assignment notebook/report
+...
 ```
 
 ## Dataset
@@ -56,14 +52,8 @@ Skip training and use the provided weights directly.
 ### Available Models
 All trained models are available in:
 - **Repository**: `models/final/`
-- **Google Drive Mirror**: [Download Here](https://drive.google.com/drive/folders/1iDISei7-KV1EJ3UViHUGNcR1vGFDHfHl?usp=sharing)
+- **Google Drive link for models**: [Download Here](https://drive.google.com/drive/folders/1iDISei7-KV1EJ3UViHUGNcR1vGFDHfHl?usp=sharing)
 
-### Model Files
-- `ResNet18-Trained-Improved.pt` - ResNet18 model
-- `EfficientNet-B0-Trained.pt` - EfficientNet-B0 model
-- `ensemble_model.pt` - Ensemble model
-- `resnet_fused_svm_model.pkl` - ResNet + SVM fusion
-- `color_svm_model.pkl` - Color-based SVM model
 
 ### Loading Models
 
@@ -108,7 +98,6 @@ svm_model = joblib.load("models/final/resnet_fused_svm_model.pkl")
 ## Troubleshooting
 - **File not found**: Verify the relative path and directory structure
 - **CUDA/GPU issues**: Ensure your Kaggle notebook uses GPU accelerator
-- **Version mismatches**: Load models with the same library versions as used in training
 
 ## Course Information
 **Course Code**: UE23CS352A  
