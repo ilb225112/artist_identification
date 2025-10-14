@@ -45,6 +45,13 @@ pip install torch torchvision scikit-learn numpy pandas matplotlib tqdm jupyter
    - CNN experiments: `codes/CNN_Experiments.ipynb` or `codes/Cnn_variations.ipynb`
    - SVM experiments: `codes/SVM.ipynb`
 
+
+
+ NOTE: 
+> Even to use the SVM file, it’s recommended to work inside the **`ML_Assignment`** directory (it contains everything except `cnn_experiments`).
+> The `svm.ipynb` file was extracted from this directory.
+
+
 ## Using Pre-trained Models
 
 Skip training and use the provided weights directly.
